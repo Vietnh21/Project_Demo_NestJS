@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style_document.css" />
+  </head>
+  <body>
+    <div class="document_header">
+      <div onclick="myFunction()" class="document_header-button">
+        <i class="fas fa-hamburger"></i>
+      </div>
+      <div id="document_header-nav">
+        <div class="nav-logo">
+          <img src="https://docs.nestjs.com/assets/logo-small.svg" alt="" />
+        </div>
+        <div id="unforcus-input" class="nav_search">
+          <a href=""><i class="fas fa-search"></i></a>
+          <input class="search-input" type="text" placeholder="Search" />
+        </div>
+        <div class="nav_right">
+          <a href="index.html">OUR WEBSITE</a>
+          <a href="">COURSES</a>
+          <a href="">SUPPORT US</a>
+          <a class="nav-special" href="enterprise.html">ENTERPRISE SUPPORT</a>
+        </div>
+      </div>
+      <div class="document_header-icon">
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-stack-overflow"></i></a>
+        <a href=""><i class="fab fa-discord"></i></a>
+      </div>
+      <div id="nav-sup" class="show-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="document_container">
+      <div id="menu_id" class="container-menu">
+        <ul>
+          <li>INTRODUCTION</li>
+          <li>OVERVIEW <i class="fas fa-angle-down"></i></li>
+          <li>FUNDAMENTALS <i class="fas fa-angle-down"></i></li>
+          <li>TECHNIQUES <i class="fas fa-angle-down"></i></li>
+          <li>SECURITY <i class="fas fa-angle-down"></i></li>
+          <li>GRAPHQL <i class="fas fa-angle-down"></i></li>
+          <li>WEBSOCKETS <i class="fas fa-angle-down"></i></li>
+          <li>MICROSERVICES <i class="fas fa-angle-down"></i></li>
+          <li>STANDALONE APPS <i class="fas fa-angle-down"></i></li>
+          <li>MIGRATION GUIDE <i class="fas fa-angle-down"></i></li>
+          <li>T-SHIRTS AND HOODIES <i class="fas fa-angle-down"></i></li>
+          <li>DISCOVER <i class="fas fa-angle-down"></i></li>
+          <li>SUPPORT US <i class="fas fa-angle-down"></i></li>
+        </ul>
+        <div class="container-menu-button1">
+          <a href="">GET ENTERPRISE SUPPORT</a>
+        </div>
+        <div class="container-menu-button2">
+          <a href="">VERSION 7</a>
+        </div>
+      </div>
+      <div class="container_content test2">
+        <div class="content_intro">
+          <h1 id="intro">Introduction</h1>
+          <div><i class="fas fa-edit"></i></div>
+          <p>
+            Nest (NestJS) is a framework for building efficient, scalable
+            <a href="">Node.js</a> server-side applications. It uses progressive
+            JavaScript, is built with and fully supports
+            <a href="">TypeScript</a> (yet still enables developers to code in
+            pure JavaScript) and combines elements of OOP (Object Oriented
+            Programming), FP (Functional Programming), and FRP (Functional
+            Reactive Programming).
+          </p>
+          <p>
+            Under the hood, Nest makes use of robust HTTP Server frameworks like
+            <a href="">Express</a> (the default) and optionally can be
+            configured to use <a href="">Fastify</a> as well!
+          </p>
+          <p>
+            Nest provides a level of abstraction above these common Node.js
+            frameworks (Express/Fastify), but also exposes their APIs directly
+            to the developer. This gives developers the freedom to use the
+            myriad of third-party modules which are available for the underlying
+            platform.
+          </p>
+          <h2 id="philo">Philosophy</h2>
+          <p>
+            In recent years, thanks to Node.js, JavaScript has become the
+            “lingua franca” of the web for both front and backend applications.
+            This has given rise to awesome projects like <a href="">Angular</a>,
+            <a href="">React</a> and <a href="">Vue</a>, which improve developer
+            productivity and enable the creation of fast, testable, and
+            extensible frontend applications. However, while plenty of superb
+            libraries, helpers, and tools exist for Node (and server-side
+            JavaScript), none of them effectively solve the main problem of -
+            Architecture.
+          </p>
+          <p>
+            Nest provides an out-of-the-box application architecture which
+            allows developers and teams to create highly testable, scalable,
+            loosely coupled, and easily maintainable applications. The
+            architecture is heavily inspired by Angular.
+          </p>
+          <h2 id="insta">Installation</h2>
+          <p>
+            To get started, you can either scaffold the project with the
+            <a href="">Nest CLI</a>, or clone a starter project (both will
+            produce the same outcome). To scaffold the project with the Nest
+            CLI, run the following commands. This will create a new project
+            directory, and populate the directory with the initial core Nest
+            files and supporting modules, creating a conventional base structure
+            for your project. Creating a new project with the Nest CLI is
+            recommended for first-time users. We'll continue with this approach
+            in <a href="">First Steps</a>.
+          </p>
+          <h2>Custom providers</h2>
+          <p>
+            In earlier chapters, we touched on various aspects of Dependency
+            Injection (DI) and how it is used in Nest. One example of this is
+            the <a href="">constructor based</a> dependency injection used to
+            inject instances (often service providers) into classes. You won't
+            be surprised to learn that Dependency Injection is built into the
+            Nest core in a fundamental way. So far, we've only explored one main
+            pattern. As your application grows more complex, you may need to
+            take advantage of the full features of the DI system, so let's
+            explore them in more detail.
+          </p>
+        </div>
+      </div>
+      <div class="container-menu_right">
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#philo">Philosophy</a></li>
+          <li><a href="#insta">Installation</a></li>
+          <li><a href="">Custom providers</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="nav-mobie">
+      <div id="close_nav" class="nav_mobie-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="nav-list">
+        <li><a class="nav_link" href="index.html">OUR WEBSITE</a></li>
+        <li><a class="nav_link" href="enterprise.html">ENTERPRISE</a></li>
+        <li><a class="nav_link" href="">COURSES</a></li>
+        <li><a class="nav_link" href="">SUPPORT US</a></li>
+      </ul>
+    </nav>
+    <script>
+      const getNav = document.getElementById("nav-sup");
+      const getNavMobie = document.querySelector(".nav-mobie");
+      const closeNav = document.getElementById("close_nav");
+      function showNav() {
+        getNavMobie.classList.add("open");
+      }
+      function hideNav() {
+        getNavMobie.classList.remove("open");
+      }
+
+      getNav.addEventListener("click", showNav);
+
+      closeNav.addEventListener("click", hideNav);
+    </script>
+    <script>
+      const getButtom = document.querySelector(".document_header-button");
+      const getContent = document.querySelector(".container_content");
+      const getInput = document.querySelector(".nav_search");
+
+      function clickInput() {
+        getInput.classList.toggle("nav_search-click");
+      }
+
+      function clickButtom() {
+        getButtom.classList.toggle("test");
+      }
+      function showContent() {
+        getContent.classList.toggle("test2");
+      }
+      getInput.addEventListener("click", clickInput);
+      getButtom.addEventListener("click", clickButtom);
+      getButtom.addEventListener("click", showContent);
+
+      // window.onload = function () {
+      //   document.onclick = function (e) {
+      //     if (e.target.id !== "unforcus-input") {
+      //       getInput.classList.remove("nav_search-click");
+      //     }
+      //   };
+      // };
+
+      function myFunction() {
+        var x = document.getElementById("menu_id");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
